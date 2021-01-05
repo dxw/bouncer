@@ -3,3 +3,4 @@ pids/*
 dump.rdb
 .env
 coverage
+/vendor/bundle/
