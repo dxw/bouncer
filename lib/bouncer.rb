@@ -14,6 +14,8 @@ require "optic14n"
 require "whitelisted_host"
 require "optic14n"
 
+require "govuk_app_config"
+
 require "bouncer/error_reporting"
 require "bouncer/cacher"
 require "bouncer/canonicalized_request"
@@ -22,6 +24,7 @@ require "bouncer/fallback_rules"
 require "bouncer/preemptive_rules"
 
 require "bouncer/outcome/base"
+require "bouncer/outcome/bad_request"
 require "bouncer/outcome/canary"
 require "bouncer/outcome/global_type"
 require "bouncer/outcome/healthcheck"
