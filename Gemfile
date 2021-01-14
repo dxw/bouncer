@@ -13,6 +13,7 @@ gem "rake", "13.0.1"
 gem "rollbar", "~> 3.0"
 gem "sidekiq", "~> 6.1.2"
 
+gem "govuk_app_config"
 gem "pg", "1.2.3"
 gem "rack", "~> 2.2.3"
 gem "rake", "13.0.1"

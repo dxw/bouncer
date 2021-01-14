@@ -1,16 +1,22 @@
 version: 2
 updates:
-- package-ecosystem: bundler
-  directory: "/"
-  schedule:
-    interval: daily
-    time: "11:00"
-    timezone: Etc/Greenwich
-  open-pull-requests-limit: 3
-  allow:
-  - dependency-name: rollbar
-  - dependency-name: sidekiq
-  - dependency-name: puma
-  - dependency-name: foreman
-  - dependency-name: byebug
-  - dependency-name: dotenv
+  - package-ecosystem: bundler
+    directory: /
+    schedule:
+      interval: daily
+    allow:
+      # Security updates
+      - dependency-name: brakeman
+        dependency-type: direct
+      # Internal gems
+      - dependency-name: "govuk*"
+        dependency-type: direct
+      # Framework gems
+      - dependency-name: pg
+        dependency-type: direct
+      - dependency-name: rack
+        dependency-type: direct
+      - dependency-name: rack-test
+        dependency-type: direct
+      - dependency-name: rspec
+        dependency-type: direct
