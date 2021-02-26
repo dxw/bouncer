@@ -1,4 +1,5 @@
 require "dotenv/load"
+require "erb"
 
 RACK_ENV ||= ENV["RACK_ENV"] || "development"
 
