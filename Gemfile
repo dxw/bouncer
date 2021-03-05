@@ -15,8 +15,6 @@ gem "sidekiq", "~> 6.1.2"
 
 gem "govuk_app_config"
 gem "pg", "1.2.3"
-gem "rack", "~> 2.2.3"
-gem "rake", "13.0.1"
 
 group :development do
   gem "mr-sparkle", "0.3.0"
