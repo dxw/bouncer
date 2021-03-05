@@ -1,5 +1,6 @@
 source "https://rubygems.org/"
 
+ruby "2.7.2"
 gem "activerecord", "~> 6.0.3" # Ideally version should be synced with Transition
 gem "erubis", "2.7.0"
 gem "nokogiri", "1.11.0"
