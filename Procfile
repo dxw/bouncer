@@ -1,2 +1,2 @@
-web: bundle exec puma -C config/puma.rb
+web: bundle exec rackup -p $PORT
 worker: bundle exec sidekiq -C config/sidekiq.yml -r ./worker.rb
