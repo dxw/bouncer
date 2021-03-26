@@ -7,6 +7,9 @@ module Bouncer
     def call(env)
       context = RequestContext.new(CanonicalizedRequest.new(env))
 
+      pp "BOUNCER:CONTEXT:HOST #{context.host}"
+      pp "BOUNCER:CONTEXT:REQUEST_PATH #{context.request.path}"
+
       outcome = if context.host.nil? && context.request.path == "/healthcheck"
                   Outcome::Healthcheck
                 elsif context.host.nil?

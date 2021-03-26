@@ -14,6 +14,10 @@ module Bouncer
     end
 
     def host
+
+      pp "**********"
+      pp @request.host
+      pp "**********"
       @host ||= Host.find_by(hostname: @request.host)
     end
 
